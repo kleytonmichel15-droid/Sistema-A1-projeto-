@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulário de contato e sugestão de receitas do site Sabores da Casa.">
+  <meta name="author" content="Sabores da Casa">
+  <title>Formulário — Sabores da Casa</title>
+</head>
+<body>
+  <header>
+    <h1>Sabores da Casa</h1>
+    <p>Receitas simples e deliciosas para o dia a dia</p>
+    <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="receitas.html">Receitas</a></li>
+      <li><a href="receita-feijoada.html">Feijoada</a></li>
+      <li><a href="receita-lasanha.html">Lasanha</a></li>
+      <li><a href="receita-strogonoff.html">Strogonoff</a></li>
+      <li><a href="receita-bolo.html">Bolo</a></li>
+      <li><a href="receita-panqueca.html">Panqueca</a></li>
+      <li><a href="receita-pizza.html">Pizza</a></li>
+      <li><a href="receita-brigadeiro.html">Brigadeiro</a></li>
+      <li><a href="receita-tapioca.html">Tapioca</a></li>
+      <li><a href="receita-churrasco.html">Churrasco</a></li>
+      <li><a href="dicas.html">Dicas</a></li>
+      <li><a href="formulario.html" aria-current="page">Formulário</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Fale com a gente / Envie sua sugestão</h2>
+      <p>Preencha o formulário abaixo para sugerir uma receita, tirar dúvidas ou enviar uma foto do seu prato preferido.</p>
+
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Seus dados</legend>
+
+          <p>
+            <label for="nome">Nome completo:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+          </p>
+
+          <p>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+          </p>
+
+          <p>
+            <label for="nascimento">Data de nascimento:</label><br>
+            <input type="date" id="nascimento" name="nascimento">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Sobre a receita</legend>
+
+          <p>
+            <label for="receita">Qual receita você deseja preparar?</label><br>
+            <input list="receitas" id="receita" name="receita" placeholder="Digite ou escolha uma receita" required>
+            <datalist id="receitas">
+              <option value="Feijoada">
+              <option value="Lasanha">
+              <option value="Strogonoff">
+              <option value="Bolo de chocolate">
+              <option value="Pizza">
+            </datalist>
+          </p>
+
+          <p>
+            <label for="categoria">Categoria da receita:</label><br>
+            <select id="categoria" name="categoria">
+              <option value="prato-principal">Prato principal</option>
+              <option value="sobremesa">Sobremesa</option>
+              <option value="lanche">Lanche</option>
+              <option value="bebida">Bebida</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="foto">Envie uma foto do seu prato:</label><br>
+            <input type="file" id="foto" name="foto" accept="image/*">
+          </p>
+
+          <p>
+            <label for="cor">Cor do seu prato favorito para servir:</label><br>
+            <input type="color" id="cor" name="cor" value="#c46a2b">
+          </p>
+
+          <p>
+            <label for="nota">Nota que você daria para essa receita (0 a 5):</label><br>
+            <input type="range" id="nota" name="nota" min="0" max="5" step="1" value="5">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferências</legend>
+
+          <p>
+            <label for="mensagem">Mensagem, dúvida ou sugestão:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Escreva aqui sua mensagem"></textarea>
+          </p>
+
+          <p>
+            <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+            <label for="newsletter">Quero receber novidades por e-mail</label>
+          </p>
+
+          <p>Você segue alguma restrição alimentar?</p>
+          <p>
+            <input type="radio" id="restricao-nenhuma" name="restricao" value="nenhuma" checked>
+            <label for="restricao-nenhuma">Nenhuma</label><br>
+            <input type="radio" id="restricao-vegetariano" name="restricao" value="vegetariano">
+            <label for="restricao-vegetariano">Vegetariana</label><br>
+            <input type="radio" id="restricao-vegano" name="restricao" value="vegano">
+            <label for="restricao-vegano">Vegana</label><br>
+            <input type="radio" id="restricao-gluten" name="restricao" value="sem-gluten">
+            <label for="restricao-gluten">Sem glúten</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Enviar</button>
+        </p>
+      </form>
+    </section>
+
+    <aside>
+      <h2>Por que enviar sua sugestão?</h2>
+      <p>As receitas mais pedidas pela comunidade são testadas pela nossa equipe e podem entrar
+      no site em uma futura atualização.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sabores da Casa — Todos os direitos reservados.</p>
+    <p>Site desenvolvido como projeto de estudo de HTML5 semântico.</p>
+    <p>Contato: <a href="mailto:contato@saboresdacasa.exemplo">contato@saboresdacasa.exemplo</a></p>
+  </footer>
+</body>
+</html>
